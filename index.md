@@ -6,12 +6,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp; give a shoutout to the user!  
 **?love @username - all users**   
 &nbsp;&nbsp;&nbsp;&nbsp; give some love to someone!   
-**?stop - all users**
+**?stop - all users**   
 &nbsp;&nbsp;&nbsp;&nbsp; Get some help!   
-**?skyrim - all users**
+**?skyrim - all users**   
 &nbsp;&nbsp;&nbsp;&nbsp; For all your skyrim needs   
   
-## For questions and troubleshooting, please contact:
-### Joshua Osborne
-### joshua.osborne@mavs.uta.edu
-### joshuaalexanderosborne@gmail.com
