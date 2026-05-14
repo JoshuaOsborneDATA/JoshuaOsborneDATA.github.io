@@ -6,6 +6,19 @@
   <title>Joshua Osborne: Data Scientist &amp; Researcher</title>
   <meta name="description"
         content="Portfolio of Joshua Alexander Osborne; Physics PhD, data scientist, and author of 6 peer-reviewed publications in astrophysics and Bayesian statistics." />
+  <meta property="og:title"       content="Joshua Osborne — Data Scientist &amp; Researcher" />
+  <meta property="og:description" content="Physics PhD with expertise in Bayesian inference, machine learning, and AWS data engineering. 6 peer-reviewed publications." />
+  <meta property="og:image"       content="images/JoshuaAlexanderOsborne.png" />
+  <meta property="og:type"        content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d1b2a'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='700' font-size='14' fill='%232563eb'>JO</text></svg>" />
+  <script>
+    (function(){
+      var t=localStorage.getItem('theme');
+      if(t==='light'||(t==null&&window.matchMedia('(prefers-color-scheme:light)').matches)){
+        document.documentElement.classList.add('light-mode');
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,6 +26,23 @@
 <!-- ── Nav ─────────────────────────────────────────────────── -->
 <nav>
   <span class="logo">Joshua Osborne</span>
+  <div class="nav-actions">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode" title="Toggle colour scheme">
+      <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      </svg>
+      <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+    </button>
+    <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -26,8 +56,8 @@
 <!-- ── Hero ────────────────────────────────────────────────── -->
 <section id="hero">
   <img class="hero-avatar" src="images/JoshuaAlexanderOsborne.png" alt="Joshua Osborne" />
-  <p class="tagline">Physics PhD · Data Science &amp; Research</p>
   <h1>Joshua Alexander Osborne</h1>
+  <p class="tagline">Physics PhD · Data Science &amp; Research</p>
   <p class="subtitle">
     Physics PhD with 5+ years of experience in statistical modeling, Bayesian
     inference, and machine learning; spanning 6 peer-reviewed papers
@@ -73,7 +103,7 @@
                  0 4.67 2.387 4.67 5.01 0 2.56-1.29 5.007-4.67 5.007h-3.498V8.083zm1.3
                  1.18v7.658h2.04c2.56 0 3.468-1.79 3.468-3.829 0-1.972-.85-3.829-3.468-3.829H14.486z"/>
       </svg>
-      Publications
+      ORCID
     </a>
   </div>
 </section>
@@ -87,8 +117,8 @@
       <div class="about-card">
         <h3>Education</h3>
         <ul>
-          <li><strong>Ph.D. in Physics:</strong> University of Texas at Arlington (2020-2025)</li>
-          <li><strong>B.Sc. in Physics,</strong> minor in Mathematics; University of Texas at Arlington (2016-2019)</li>
+          <li><strong>Ph.D. in Physics:</strong> University of Texas at Arlington (2020–2025)</li>
+          <li><strong>B.Sc. in Physics,</strong> minor in Mathematics; University of Texas at Arlington (2016–2019)</li>
         </ul>
       </div>
       <div class="about-card">
@@ -105,20 +135,50 @@
       <div class="about-card">
         <h3>Industry</h3>
         <p>
-          AI / Data Scientist at RipDrip — AWS ETL pipelines, LLM-based
-          intent classifiers, and Power BI marketing dashboards.
+          AI / Data Scientist at RipDrip; built production AWS ETL pipelines
+          and LLM-based classifiers for downstream marketing analytics. Delivered
+          Power BI dashboards tracking campaign performance, ad-spend efficiency,
+          and sales pipeline visibility.
         </p>
       </div>
       <div class="about-card">
         <h3>Technical Skills</h3>
-        <ul>
-          <li><strong>Languages:</strong> Python, SQL, Julia, MATLAB, Fortran, C++</li>
-          <li><strong>ML/Stats:</strong> PyTorch, Scikit-learn, SciPy, ParaMonte</li>
-          <li><strong>Data:</strong> PySpark, Pandas, NumPy</li>
-          <li><strong>Cloud (AWS):</strong> S3, Glue, Athena, Lambda, EventBridge</li>
-          <li><strong>Viz:</strong> Plotly, Streamlit, Power BI, Tableau, Matplotlib</li>
-          <li><strong>Tools:</strong> Git, Docker, Linux, MPICH, OpenMP</li>
-        </ul>
+        <div class="skills-group">
+          <p class="skill-category">Languages</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Julia</span><span class="tag">MATLAB</span><span class="tag">Fortran</span><span class="tag">C++</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">ML / Stats</p>
+          <div class="tags">
+            <span class="tag">PyTorch</span><span class="tag">Scikit-learn</span><span class="tag">SciPy</span><span class="tag">ParaMonte</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">Data</p>
+          <div class="tags">
+            <span class="tag">PySpark</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">Cloud (AWS)</p>
+          <div class="tags">
+            <span class="tag">S3</span><span class="tag">Glue</span><span class="tag">Athena</span><span class="tag">Lambda</span><span class="tag">EventBridge</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">Viz</p>
+          <div class="tags">
+            <span class="tag">Plotly</span><span class="tag">Streamlit</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Matplotlib</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">Tools</p>
+          <div class="tags">
+            <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">MPICH</span><span class="tag">OpenMP</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -127,7 +187,7 @@
 <!-- ── Experience ───────────────────────────────────────────── -->
 <section id="experience">
   <div class="container">
-    <p class="section-label">Work History</p>
+    <p class="section-label">Career</p>
     <h2 class="section-title">Experience</h2>
     <div class="exp-list">
 
@@ -137,12 +197,14 @@
             <p class="exp-company">RipDrip</p>
             <p class="exp-role">AI / Data Scientist</p>
           </div>
-          <span class="exp-date">Dec 2025 to Apr 2026 · Arlington, TX</span>
+          <span class="exp-date">Dec 2025 – Apr 2026 · Arlington, TX</span>
         </div>
-        <p class="exp-summary">
-          End-to-end AWS data engineering and LLM-powered marketing analytics;
-          delivered measurable improvements in ad-spend efficiency and sales pipeline visibility.
-        </p>
+        <ul class="exp-bullets">
+          <li>Architected and deployed an end-to-end ETL pipeline on AWS using PySpark and Glue, with S3 as the storage backbone following the medallion architecture to organize raw, cleansed, and curated data layers</li>
+          <li>Discovered inefficiencies in company ad-spend, resulting in a 10× increase in return on ad-spend</li>
+          <li>Built a Marketing/Sales dashboard in Power BI tracking show-rate, time-to-sale, and ad-spend efficiency across campaigns</li>
+          <li>Extracted and structured customer intent signals from 1,000+ daily messages using regex and LLM-based classification, enabling downstream sales prioritization</li>
+        </ul>
       </div>
 
       <div class="exp-card">
@@ -151,12 +213,14 @@
             <p class="exp-company">University of Texas at Arlington</p>
             <p class="exp-role">Graduate Research / Teaching Assistant</p>
           </div>
-          <span class="exp-date">Jan 2020 to Dec 2025 · Arlington, TX</span>
+          <span class="exp-date">Jan 2020 – Dec 2025 · Arlington, TX</span>
         </div>
-        <p class="exp-summary">
-          Bayesian and Monte Carlo research in high-energy astrophysics; 6 peer-reviewed
-          publications, conference presentations, and undergraduate instruction.
-        </p>
+        <ul class="exp-bullets">
+          <li>Published 6 peer-reviewed papers in high-energy astrophysics, leveraging Bayesian inference, Monte Carlo methods, and advanced statistical techniques</li>
+          <li>Presented research at multiple American Physical Society (APS) conferences on GRB population statistics and Bayesian inference methods</li>
+          <li>Mentored 3 undergraduate researchers in scientific computing and data analysis, supporting their integration into active research projects</li>
+          <li>Instructed undergraduate physics labs for 60 students per semester, delivering hands-on instruction in experimental methods</li>
+        </ul>
       </div>
 
     </div>
@@ -215,8 +279,51 @@
         </div>
       </div>
 
+      <!-- GRB Signal Identification -->
+      <div class="project-card">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/projects/GRB%20signal%20identification/image%20(1).png" alt="Noisy gamma-ray burst lightcurve with signal identification overlay" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">GRB Signal Identification</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-research">Research</span>
+            <span class="badge badge-wip">In Progress</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Bayesian framework for identifying astrophysical signal in noisy
+          gamma-ray burst lightcurves; determines optimal time-bin widths to
+          resolve genuine flux variations from background fluctuations. Analogous
+          in spirit to the Bayesian Blocks algorithm; developed independently for
+          targeted GRB pulse detection.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Bayesian Statistics</span>
+          <span class="tag">SciPy</span>
+          <span class="tag">ParaMonte</span>
+        </div>
+        <div class="project-footer">
+          <span class="badge badge-private">Private Repository</span>
+        </div>
+      </div>
+
       <!-- GNN — Neutrinoless Double Beta Decay -->
       <div class="project-card">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/projects/gnn/epoch43.png" alt="Training and validation metrics at epoch 43" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+          </div>
+        </div>
         <div class="project-header">
           <p class="project-title">GNN Detection of Neutrinoless Double Beta Decay</p>
           <span class="badge badge-research">Research</span>
@@ -236,6 +343,9 @@
           <span class="tag">torch-cluster</span>
           <span class="tag">Point Cloud</span>
           <span class="tag">Multi-GPU</span>
+        </div>
+        <div class="project-footer">
+          <span class="badge badge-private">Private Repository</span>
         </div>
       </div>
 
@@ -289,7 +399,7 @@
         </div>
       </div>
 
-      <!-- Universe 2022 (no figures available) -->
+      <!-- Universe 2022 -->
       <div class="pub-card">
         <div class="pub-content">
           <span class="pub-year">2022</span>
@@ -344,7 +454,7 @@
               <strong>Joshua Alexander Osborne</strong>, Amir Shahmoradi
             </p>
             <p class="pub-venue">
-              Monthly Notices of the Royal Astronomical Society (MNRAS) 504:4192-4203
+              Monthly Notices of the Royal Astronomical Society (MNRAS) 504:4192–4203
             </p>
             <div class="pub-links">
               <a class="pub-link"
@@ -381,7 +491,7 @@
               Amir Shahmoradi
             </p>
             <p class="pub-venue">
-              Monthly Notices of the Royal Astronomical Society (MNRAS) 502:5622-5630
+              Monthly Notices of the Royal Astronomical Society (MNRAS) 502:5622–5630
             </p>
             <div class="pub-links">
               <a class="pub-link"
@@ -472,7 +582,7 @@
             <p class="pub-authors">
               <strong>Joshua A. Osborne</strong>, Amir Shahmoradi, Robert J. Nemiroff
             </p>
-            <p class="pub-venue">The Astrophysical Journal (ApJ) 903:33-133</p>
+            <p class="pub-venue">The Astrophysical Journal (ApJ) 903:33–133</p>
             <div class="pub-links">
               <a class="pub-link" href="https://doi.org/10.3847/1538-4357/abb9b7"
                  target="_blank" rel="noopener">DOI</a>
@@ -497,7 +607,7 @@
       <div class="award-card">
         <p class="award-name">GAANN Fellowship</p>
         <p class="award-org">U.S. Dept. of Education / UTA</p>
-        <p class="award-date">Spring 2025 to Fall 2025</p>
+        <p class="award-date">Spring 2025 – Fall 2025</p>
       </div>
 
       <div class="award-card">
@@ -549,21 +659,14 @@
 <footer>
   <p>
     &copy; 2026 Joshua Alexander Osborne &middot;
-    <a href="https://github.com/JoshuaOsborneDATA/Data-science-projects/tree/main"
-       target="_blank" rel="noopener">
-      github.com/JoshuaOsborneDATA
-    </a>
-    &middot;
-    <span class="footer-email" onclick="navigator.clipboard.writeText('joshuaalexanderosborne@gmail.com').then(function(){
-      var el=document.querySelector('.footer-email');
-      var prev=el.textContent;
-      el.textContent='Copied!';
-      setTimeout(function(){ el.textContent=prev; }, 2000);
-    })" title="Click to copy email">joshuaalexanderosborne@gmail.com</span>
+    <span class="footer-email" title="Click to copy email">joshuaalexanderosborne@gmail.com</span>
   </p>
 </footer>
 
-<!-- Figure hover popover (shows full image beside the card) -->
+<!-- Back to top -->
+<button id="back-to-top" aria-label="Back to top" title="Back to top">&#8679;</button>
+
+<!-- Figure hover popover -->
 <div id="fig-popover"><img id="fig-popover-img" src="" alt="" /></div>
 
 <!-- Lightbox overlay -->
@@ -574,6 +677,48 @@
 </div>
 
 <script>
+  /* ── Mobile nav ─────────────────────────────────────────────── */
+  var hamburger = document.querySelector('.nav-hamburger');
+  var navUl = document.querySelector('nav ul');
+
+  hamburger.addEventListener('click', function() {
+    var expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', String(!expanded));
+    navUl.classList.toggle('open');
+  });
+
+  navUl.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      hamburger.setAttribute('aria-expanded', 'false');
+      navUl.classList.remove('open');
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('nav')) {
+      hamburger.setAttribute('aria-expanded', 'false');
+      navUl.classList.remove('open');
+    }
+  });
+
+  /* ── Active nav on scroll ───────────────────────────────────── */
+  var navLinks = Array.from(document.querySelectorAll('nav ul a[href^="#"]'));
+  var sections = navLinks
+    .map(function(a) { return document.querySelector(a.getAttribute('href')); })
+    .filter(Boolean);
+
+  var sectionObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        navLinks.forEach(function(a) { a.classList.remove('active'); });
+        var link = document.querySelector('nav ul a[href="#' + entry.target.id + '"]');
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  sections.forEach(function(s) { sectionObserver.observe(s); });
+
   /* ── Gallery navigation ─────────────────────────────────────── */
   document.querySelectorAll('[data-gallery]').forEach(function(gallery) {
     var imgs = Array.from(gallery.querySelectorAll('.gallery-img'));
@@ -582,9 +727,16 @@
     var next = gallery.querySelector('.gallery-next');
     if (!imgs.length) return;
 
+    if (imgs.length <= 1) {
+      if (prev) prev.style.display = 'none';
+      if (next) next.style.display = 'none';
+      dots.forEach(function(d) { d.style.display = 'none'; });
+      return;
+    }
+
     function show(i) {
       imgs.forEach(function(img) { img.classList.remove('active'); });
-      dots.forEach(function(d) { d.classList.remove('active'); });
+      dots.forEach(function(d)   { d.classList.remove('active'); });
       imgs[i].classList.add('active');
       if (dots[i]) dots[i].classList.add('active');
     }
@@ -604,9 +756,9 @@
     });
   });
 
-  /* ── Lightbox (click to open, click/Escape to close) ───────── */
-  var lb       = document.getElementById('lightbox');
-  var lbImg    = lb.querySelector('.lightbox-img');
+  /* ── Lightbox ───────────────────────────────────────────────── */
+  var lb      = document.getElementById('lightbox');
+  var lbImg   = lb.querySelector('.lightbox-img');
   var closeBtn = lb.querySelector('.lightbox-close');
 
   function openLightbox(src, alt) {
@@ -614,10 +766,8 @@
     lbImg.alt = alt || '';
     lb.classList.add('open');
   }
-
   function closeLightbox() { lb.classList.remove('open'); }
 
-  // Click a gallery image to open full view
   document.querySelectorAll('.gallery-img').forEach(function(img) {
     img.addEventListener('click', function() { openLightbox(img.src, img.alt); });
   });
@@ -644,11 +794,11 @@
     var left, top;
 
     if (rect.right + GAP + pW <= vw) {
-      left = rect.right + GAP;                          // prefer right
+      left = rect.right + GAP;
     } else if (rect.left - GAP - pW >= 0) {
-      left = rect.left - GAP - pW;                     // fall back left
+      left = rect.left - GAP - pW;
     } else {
-      left = Math.max(8, (vw - pW) / 2);               // centre
+      left = Math.max(8, (vw - pW) / 2);
     }
 
     top = rect.top + rect.height / 2 - pH / 2;
@@ -682,6 +832,34 @@
       if (img.classList.contains('active')) showPopover(img);
     });
     img.addEventListener('mouseleave', hidePopover);
+  });
+
+  /* ── Back to top ────────────────────────────────────────────── */
+  var backBtn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) backBtn.classList.add('visible');
+    else backBtn.classList.remove('visible');
+  });
+  backBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ── Theme toggle ───────────────────────────────────────────── */
+  var themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', function() {
+    var isLight = document.documentElement.classList.toggle('light-mode');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+  });
+
+  /* ── Footer email copy ──────────────────────────────────────── */
+  var footerEmail = document.querySelector('.footer-email');
+  footerEmail.addEventListener('click', function() {
+    navigator.clipboard.writeText('joshuaalexanderosborne@gmail.com').then(function() {
+      var prev = footerEmail.textContent;
+      footerEmail.textContent = 'Copied!';
+      setTimeout(function() { footerEmail.textContent = prev; }, 2000);
+    });
   });
 </script>
 
