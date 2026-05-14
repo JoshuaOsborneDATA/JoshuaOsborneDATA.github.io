@@ -101,10 +101,8 @@
       <div class="about-card">
         <h3>Industry</h3>
         <p>
-          Most recently delivered a 10x improvement in ad-spend ROI at RipDrip
-          through data-driven marketing analysis. Built end-to-end ETL pipelines
-          on AWS, LLM-based customer intent classifiers, and Power BI dashboards
-          tracking key sales metrics.
+          AI / Data Scientist at RipDrip — AWS ETL pipelines, LLM-based
+          intent classifiers, and Power BI marketing dashboards.
         </p>
       </div>
       <div class="about-card">
@@ -137,12 +135,10 @@
           </div>
           <span class="exp-date">Dec 2025 to Apr 2026 · Arlington, TX</span>
         </div>
-        <ul class="exp-bullets">
-          <li>Architected and deployed an end-to-end ETL pipeline on AWS using PySpark and Glue, with S3 as the storage backbone, following the medallion architecture to organize raw, cleansed, and curated data layers.</li>
-          <li>Discovered inefficiencies in company ad-spend resulting in a 10x increase in return on ad-spend.</li>
-          <li>Built a Marketing/Sales dashboard in Power BI tracking show-rate, time-to-sale, and ad-spend efficiency across campaigns.</li>
-          <li>Extracted and structured customer intent signals from 1,000+ daily messages using regex and LLM-based classification, enabling downstream sales prioritization.</li>
-        </ul>
+        <p class="exp-summary">
+          End-to-end AWS data engineering and LLM-powered marketing analytics;
+          delivered measurable improvements in ad-spend efficiency and sales pipeline visibility.
+        </p>
       </div>
 
       <div class="exp-card">
@@ -153,12 +149,10 @@
           </div>
           <span class="exp-date">Jan 2020 to Dec 2025 · Arlington, TX</span>
         </div>
-        <ul class="exp-bullets">
-          <li>Published 6 peer-reviewed papers in high-energy astrophysics, leveraging Bayesian inference, Monte Carlo methods, and advanced statistical techniques.</li>
-          <li>Presented research at multiple American Physical Society (APS) conferences on GRB population statistics and Bayesian inference methods.</li>
-          <li>Mentored 3 undergraduate researchers in scientific computing and data analysis.</li>
-          <li>Instructed undergraduate physics labs for 60 students per semester.</li>
-        </ul>
+        <p class="exp-summary">
+          Bayesian and Monte Carlo research in high-energy astrophysics; 6 peer-reviewed
+          publications, conference presentations, and undergraduate instruction.
+        </p>
       </div>
 
     </div>
@@ -174,12 +168,21 @@
 
       <!-- Urban Safety Atlas -->
       <div class="project-card">
-        <img class="project-img"
-             src="images/urban_safety_atlas.png"
-             alt="Urban Safety Atlas: US county choropleth map coloured by composite safety index"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-        <div class="project-img-placeholder">
-          add screenshot: images/urban_safety_atlas.png
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/projects/urban_safety_atlas/01_cluster_comparison.png" alt="K-Means vs HDBSCAN clustering on PCA coordinates" />
+          <img class="gallery-img" src="images/projects/urban_safety_atlas/02_pca_umap.png" alt="PCA and UMAP dimensionality reduction coloured by safety index" />
+          <img class="gallery-img" src="images/projects/urban_safety_atlas/03_convergent_validity.png" alt="Convergent validity: safety index vs external benchmarks" />
+          <img class="gallery-img" src="images/projects/urban_safety_atlas/04_bootstrap_ranks.png" alt="Bootstrap confidence intervals on county safety ranks" />
+          <img class="gallery-img" src="images/projects/urban_safety_atlas/05_weight_sensitivity.png" alt="Weight sensitivity analysis across sub-score combinations" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
         </div>
         <div class="project-header">
           <p class="project-title">Urban Safety Atlas</p>
@@ -208,84 +211,32 @@
         </div>
       </div>
 
-      <!-- GNN -->
+      <!-- GNN — Neutrinoless Double Beta Decay -->
       <div class="project-card">
         <div class="project-header">
-          <p class="project-title">Graph Neural Net: Neutrinoless Double Beta Decay</p>
+          <p class="project-title">GNN Detection of Neutrinoless Double Beta Decay</p>
           <span class="badge badge-research">Research</span>
         </div>
         <p class="project-desc">
-          Built a GNN classifier on 500K 3D point cloud files (100+ GB) to
-          distinguish signal vs. background events in neutrinoless double beta
-          decay searches, achieving 0.97 AUC on a balanced dataset. Engineered
-          radius-based and k-nearest neighbor graph topologies using
-          torch-cluster; trained across 6 GPUs with early stopping. Optimized
-          classification threshold via Youden's J statistic.
+          Graph Neural Network classifier trained on 500K 3D point cloud events
+          (100+ GB) to separate signal from background in neutrinoless double beta
+          decay searches. Engineered radius-graph and k-NN graph topologies via
+          torch-cluster, trained across 6 GPUs with early stopping, and achieved
+          0.97 AUC on a balanced dataset. Classification threshold optimised using
+          Youden's J statistic.
         </p>
         <div class="tags">
           <span class="tag">PyTorch</span>
+          <span class="tag">PyTorch Geometric</span>
           <span class="tag">GNN</span>
           <span class="tag">torch-cluster</span>
+          <span class="tag">Point Cloud</span>
           <span class="tag">Multi-GPU</span>
-          <span class="tag">Point Clouds</span>
-          <span class="tag">ROC / AUC</span>
-        </div>
-      </div>
-
-      <!-- ParaMonte -->
-      <div class="project-card">
-        <div class="project-header">
-          <p class="project-title">ParaMonte: Open-Source MCMC Library</p>
-          <span class="badge badge-oss">Open Source</span>
-        </div>
-        <p class="project-desc">
-          Contributed to ParaMonte, a high-performance serial/parallel Monte
-          Carlo and MCMC simulation library. Developed a scalable grid
-          visualization module for MCMC chain diagnostics; designed a
-          Julia-to-C/Fortran foreign function interface; contributed
-          cross-language improvements across Python, Julia, MATLAB, and
-          Octave backends.
-        </p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Julia</span>
-          <span class="tag">Fortran</span>
-          <span class="tag">MATLAB</span>
-          <span class="tag">MCMC</span>
-          <span class="tag">FFI</span>
         </div>
         <div class="project-footer">
           <a class="btn btn-primary"
-             href="https://github.com/cdslaborg/paramonte"
+             href="https://github.com/JoshuaOsborneDATA/Data-science-projects"
              target="_blank" rel="noopener">View on GitHub</a>
-        </div>
-      </div>
-
-      <!-- Bayesian Redshift -->
-      <div class="project-card">
-        <div class="project-header">
-          <p class="project-title">Bayesian Redshift Estimation for 1,366 GRBs</p>
-          <span class="badge badge-research">Research</span>
-        </div>
-        <p class="project-desc">
-          Estimated unknown redshifts for 1,366 gamma-ray bursts using a
-          multilevel hierarchical Bayesian model implemented in Fortran.
-          Deployed MPI-based distributed parallelism on the TACC supercomputer
-          to make computation tractable at scale. Published in ApJ; model
-          provides a framework for population-level inference on incomplete
-          GRB catalogs.
-        </p>
-        <div class="tags">
-          <span class="tag">Bayesian Inference</span>
-          <span class="tag">Fortran</span>
-          <span class="tag">MPI</span>
-          <span class="tag">TACC HPC</span>
-          <span class="tag">Hierarchical Modeling</span>
-        </div>
-        <div class="project-footer">
-          <a class="btn btn-primary"
-             href="https://doi.org/10.3847/1538-4357/abb9b7"
-             target="_blank" rel="noopener">Published in ApJ</a>
         </div>
       </div>
 
@@ -300,123 +251,200 @@
     <h2 class="section-title">Publications</h2>
     <div class="pub-list">
 
+      <!-- A&A 2024 -->
       <div class="pub-card">
-        <span class="pub-year">2024</span>
-        <div class="pub-body">
-          <p class="pub-title">
-            An alternative statistical interpretation for the apparent plateaus
-            in the duration distributions of GRBs
-          </p>
-          <p class="pub-authors">
-            <strong>Joshua Alexander Osborne</strong>, Christopher Michael Bryant,
-            Fatemeh Bagheri, Amir Shahmoradi
-          </p>
-          <p class="pub-venue">Astronomy &amp; Astrophysics (A&amp;A), 687 A122</p>
-          <div class="pub-links">
-            <a class="pub-link" href="https://doi.org/10.1051/0004-6361/202348599"
-               target="_blank" rel="noopener">DOI</a>
-            <a class="pub-link" href="https://arxiv.org/abs/2311.01021"
-               target="_blank" rel="noopener">arXiv</a>
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/grb_plateaus/fig1.png"
+               alt="PDF plots illustrating the plateau phenomenon in GRB duration distributions" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <p class="pub-title">
+              An alternative statistical interpretation for the apparent plateaus
+              in the duration distributions of GRBs
+            </p>
+            <p class="pub-authors">
+              <strong>Joshua Alexander Osborne</strong>, Christopher Michael Bryant,
+              Fatemeh Bagheri, Amir Shahmoradi
+            </p>
+            <p class="pub-venue">Astronomy &amp; Astrophysics (A&amp;A), 687 A122</p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://doi.org/10.1051/0004-6361/202348599"
+                 target="_blank" rel="noopener">DOI</a>
+              <a class="pub-link" href="https://arxiv.org/abs/2310.19941"
+                 target="_blank" rel="noopener">arXiv</a>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- Universe 2022 (no figures available) -->
       <div class="pub-card">
-        <span class="pub-year">2022</span>
-        <div class="pub-body">
-          <p class="pub-title">
-            Bayesian Methods for Inferring Missing Data in the BATSE Catalog
-            of Short Gamma-Ray Bursts (Invited)
-          </p>
-          <p class="pub-authors">
-            Amir Shahmoradi, <strong>Joshua Alexander Osborne</strong>,
-            Fatemeh Bagheri
-          </p>
-          <p class="pub-venue">Universe 2022, 8(5), 267</p>
-          <div class="pub-links">
-            <a class="pub-link" href="https://doi.org/10.3390/universe8050267"
-               target="_blank" rel="noopener">DOI</a>
+        <div class="pub-content">
+          <span class="pub-year">2022</span>
+          <div class="pub-body">
+            <p class="pub-title">
+              Bayesian Methods for Inferring Missing Data in the BATSE Catalog
+              of Short Gamma-Ray Bursts (Invited)
+            </p>
+            <p class="pub-authors">
+              Amir Shahmoradi, <strong>Joshua Alexander Osborne</strong>,
+              Fatemeh Bagheri
+            </p>
+            <p class="pub-venue">Universe 2022, 8(5), 267</p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://doi.org/10.3390/universe8050267"
+                 target="_blank" rel="noopener">DOI</a>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- MNRAS 2021 — Efron-Petrosian -->
       <div class="pub-card">
-        <span class="pub-year">2021</span>
-        <div class="pub-body">
-          <p class="pub-title">
-            How unbiased statistical methods lead to biased scientific
-            discoveries: A case study of the Efron-Petrosian statistic applied
-            to the luminosity-redshift evolution of Gamma-Ray Bursts
-          </p>
-          <p class="pub-authors">
-            Christopher Michael Bryant,
-            <strong>Joshua Alexander Osborne</strong>, Amir Shahmoradi
-          </p>
-          <p class="pub-venue">
-            Monthly Notices of the Royal Astronomical Society (MNRAS) 504:4192-4203
-          </p>
-          <div class="pub-links">
-            <a class="pub-link"
-               href="https://academic.oup.com/mnras/article/504/3/4192/6226913"
-               target="_blank" rel="noopener">MNRAS</a>
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/efron_petrosian/fig/synSamFluenceZoneEisoCorrected.png"
+               alt="Bias-corrected Eiso zone distribution from synthetic sample (fluence)" />
+          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluenceThreshTau.png"
+               alt="Fluence-threshold synthetic sample: tau statistic" />
+          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluxThreshTau.png"
+               alt="Flux-threshold synthetic sample: tau statistic" />
+          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluxThreshAlpha.png"
+               alt="Flux-threshold synthetic sample: alpha parameter distribution" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2021</span>
+          <div class="pub-body">
+            <p class="pub-title">
+              How unbiased statistical methods lead to biased scientific
+              discoveries: A case study of the Efron-Petrosian statistic applied
+              to the luminosity-redshift evolution of Gamma-Ray Bursts
+            </p>
+            <p class="pub-authors">
+              Christopher Michael Bryant,
+              <strong>Joshua Alexander Osborne</strong>, Amir Shahmoradi
+            </p>
+            <p class="pub-venue">
+              Monthly Notices of the Royal Astronomical Society (MNRAS) 504:4192-4203
+            </p>
+            <div class="pub-links">
+              <a class="pub-link"
+                 href="https://academic.oup.com/mnras/article/504/3/4192/6226913"
+                 target="_blank" rel="noopener">MNRAS</a>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- MNRAS 2021 — Radio-loud/quiet GRBs -->
       <div class="pub-card">
-        <span class="pub-year">2021</span>
-        <div class="pub-body">
-          <p class="pub-title">Are there radio-loud and radio-quiet Gamma-Ray Bursts?</p>
-          <p class="pub-authors">
-            <strong>Joshua Alexander Osborne</strong>, Fatemeh Bagheri,
-            Amir Shahmoradi
-          </p>
-          <p class="pub-venue">
-            Monthly Notices of the Royal Astronomical Society (MNRAS) 502:5622-5630
-          </p>
-          <div class="pub-links">
-            <a class="pub-link"
-               href="https://academic.oup.com/mnras/article/502/4/5622/6147226"
-               target="_blank" rel="noopener">MNRAS</a>
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/radio_grbs/fig/radioCutoffs.png"
+               alt="Eiso vs peak radio luminosity with classification thresholds" />
+          <img class="gallery-img" src="images/publications/radio_grbs/fig/SwiftEisoDurz.png"
+               alt="Swift GRB isotropic energy vs duration" />
+          <img class="gallery-img" src="images/publications/radio_grbs/fig/SynSample/correlations.png"
+               alt="Posterior correlations from synthetic universe MCMC sampling" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2021</span>
+          <div class="pub-body">
+            <p class="pub-title">Are there radio-loud and radio-quiet Gamma-Ray Bursts?</p>
+            <p class="pub-authors">
+              <strong>Joshua Alexander Osborne</strong>, Fatemeh Bagheri,
+              Amir Shahmoradi
+            </p>
+            <p class="pub-venue">
+              Monthly Notices of the Royal Astronomical Society (MNRAS) 502:5622-5630
+            </p>
+            <div class="pub-links">
+              <a class="pub-link"
+                 href="https://academic.oup.com/mnras/article/502/4/5622/6147226"
+                 target="_blank" rel="noopener">MNRAS</a>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- JOSS 2020 — ParaMonte -->
       <div class="pub-card">
-        <span class="pub-year">2020</span>
-        <div class="pub-body">
-          <p class="pub-title">
-            Fast fully-reproducible streamlined serial/parallel Monte Carlo/MCMC
-            simulations and visualizations via ParaMonte::Python library
-          </p>
-          <p class="pub-authors">
-            Amir Shahmoradi, Fatemeh Bagheri,
-            <strong>Joshua Alexander Osborne</strong>
-          </p>
-          <p class="pub-venue">Journal of Open Source Software (submitted)</p>
-          <div class="pub-links">
-            <a class="pub-link" href="https://arxiv.org/abs/2009.14229"
-               target="_blank" rel="noopener">arXiv</a>
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/paramonte_joss/fig1.png"
+               alt="ParaMonte grid plot of 4-dimensional MCMC sampling results" />
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2020</span>
+          <div class="pub-body">
+            <p class="pub-title">
+              Fast fully-reproducible streamlined serial/parallel Monte Carlo/MCMC
+              simulations and visualizations via ParaMonte::Python library
+            </p>
+            <p class="pub-authors">
+              Amir Shahmoradi, Fatemeh Bagheri,
+              <strong>Joshua Alexander Osborne</strong>
+            </p>
+            <p class="pub-venue">Journal of Open Source Software (submitted)</p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://arxiv.org/abs/2010.00724"
+                 target="_blank" rel="noopener">arXiv</a>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- ApJ 2020 — 1366 BATSE redshifts -->
       <div class="pub-card">
-        <span class="pub-year">2020</span>
-        <div class="pub-body">
-          <p class="pub-title">
-            A Multilevel Empirical Bayesian Approach to Estimating the Unknown
-            Redshifts of 1366 BATSE Catalog Long-Duration Gamma-Ray Bursts
-          </p>
-          <p class="pub-authors">
-            <strong>Joshua A. Osborne</strong>, Amir Shahmoradi, Robert J. Nemiroff
-          </p>
-          <p class="pub-venue">The Astrophysical Journal (ApJ) 903:33-133</p>
-          <div class="pub-links">
-            <a class="pub-link" href="https://doi.org/10.3847/1538-4357/abb9b7"
-               target="_blank" rel="noopener">DOI</a>
-            <a class="pub-link" href="https://arxiv.org/abs/2010.02977"
-               target="_blank" rel="noopener">arXiv</a>
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/batse_redshifts/parapost/BatseDetEff.png"
+               alt="BATSE detection efficiency posterior" />
+          <img class="gallery-img" src="images/publications/batse_redshifts/methods/ToyProblem.png"
+               alt="Toy problem illustrating the multilevel Bayesian methodology" />
+          <img class="gallery-img" src="images/publications/batse_redshifts/methods/lc3d.png"
+               alt="3D light curve visualisation of BATSE GRB sample" />
+          <img class="gallery-img" src="images/publications/batse_redshifts/parapost/corEpkzEiso.png"
+               alt="Posterior correlation: peak photon energy vs isotropic energy" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="pub-content">
+          <span class="pub-year">2020</span>
+          <div class="pub-body">
+            <p class="pub-title">
+              A Multilevel Empirical Bayesian Approach to Estimating the Unknown
+              Redshifts of 1366 BATSE Catalog Long-Duration Gamma-Ray Bursts
+            </p>
+            <p class="pub-authors">
+              <strong>Joshua A. Osborne</strong>, Amir Shahmoradi, Robert J. Nemiroff
+            </p>
+            <p class="pub-venue">The Astrophysical Journal (ApJ) 903:33-133</p>
+            <div class="pub-links">
+              <a class="pub-link" href="https://doi.org/10.3847/1538-4357/abb9b7"
+                 target="_blank" rel="noopener">DOI</a>
+              <a class="pub-link" href="https://arxiv.org/abs/2006.01157"
+                 target="_blank" rel="noopener">arXiv</a>
+            </div>
           </div>
         </div>
       </div>
@@ -433,40 +461,27 @@
     <div class="awards-grid">
 
       <div class="award-card">
-        <p class="award-name">Graduate Assistance in Areas of National Need (GAANN) Fellowship</p>
+        <p class="award-name">GAANN Fellowship</p>
+        <p class="award-org">U.S. Dept. of Education / UTA</p>
         <p class="award-date">Spring 2025 to Fall 2025</p>
-        <p class="award-desc">
-          Awarded by the U.S. Department of Education and UTA to support
-          graduate research in fields of national interest.
-        </p>
       </div>
 
       <div class="award-card">
-        <p class="award-name">Argonne Training Program on Extreme-Scale Computing (ATPESC)</p>
+        <p class="award-name">ATPESC</p>
+        <p class="award-org">Argonne National Laboratory</p>
         <p class="award-date">Summer 2024</p>
-        <p class="award-desc">
-          Selected among ~70 participants worldwide for intensive training in
-          high-performance computing, numerical algorithms, and scientific
-          software on supercomputers.
-        </p>
       </div>
 
       <div class="award-card">
         <p class="award-name">Student Employee of the Year</p>
+        <p class="award-org">UT Arlington Physics</p>
         <p class="award-date">Spring 2021</p>
-        <p class="award-desc">
-          Awarded by the Department of Physics at UTA in recognition of
-          exceptional performance as a graduate research and teaching assistant.
-        </p>
       </div>
 
       <div class="award-card">
-        <p class="award-name">Outstanding Undergraduate Student Poster Presentation Award</p>
+        <p class="award-name">Outstanding Undergraduate Poster Award</p>
+        <p class="award-org">Texas Section APS</p>
         <p class="award-date">Fall 2019</p>
-        <p class="award-desc">
-          Sole recipient of the Outstanding Undergraduate Poster Award from
-          the Texas Section of the American Physical Society.
-        </p>
       </div>
 
     </div>
@@ -506,6 +521,128 @@
     </a>
   </p>
 </footer>
+
+<!-- Figure hover popover (shows full image beside the card) -->
+<div id="fig-popover"><img id="fig-popover-img" src="" alt="" /></div>
+
+<!-- Lightbox overlay -->
+<div id="lightbox">
+  <div class="lightbox-backdrop"></div>
+  <img class="lightbox-img" src="" alt="" />
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+</div>
+
+<script>
+  /* ── Gallery navigation ─────────────────────────────────────── */
+  document.querySelectorAll('[data-gallery]').forEach(function(gallery) {
+    var imgs = Array.from(gallery.querySelectorAll('.gallery-img'));
+    var dots = Array.from(gallery.querySelectorAll('.gallery-dot'));
+    var prev = gallery.querySelector('.gallery-prev');
+    var next = gallery.querySelector('.gallery-next');
+    if (!imgs.length) return;
+
+    function show(i) {
+      imgs.forEach(function(img) { img.classList.remove('active'); });
+      dots.forEach(function(d) { d.classList.remove('active'); });
+      imgs[i].classList.add('active');
+      if (dots[i]) dots[i].classList.add('active');
+    }
+
+    function current() {
+      return imgs.findIndex(function(img) { return img.classList.contains('active'); });
+    }
+
+    dots.forEach(function(dot, i) {
+      dot.addEventListener('click', function() { show(i); });
+    });
+    if (prev) prev.addEventListener('click', function() {
+      show((current() - 1 + imgs.length) % imgs.length);
+    });
+    if (next) next.addEventListener('click', function() {
+      show((current() + 1) % imgs.length);
+    });
+  });
+
+  /* ── Lightbox (click to open, click/Escape to close) ───────── */
+  var lb       = document.getElementById('lightbox');
+  var lbImg    = lb.querySelector('.lightbox-img');
+  var closeBtn = lb.querySelector('.lightbox-close');
+
+  function openLightbox(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lb.classList.add('open');
+  }
+
+  function closeLightbox() { lb.classList.remove('open'); }
+
+  // Click a gallery image to open full view
+  document.querySelectorAll('.gallery-img').forEach(function(img) {
+    img.addEventListener('click', function() { openLightbox(img.src, img.alt); });
+  });
+
+  lb.querySelector('.lightbox-backdrop').addEventListener('click', closeLightbox);
+  closeBtn.addEventListener('click', closeLightbox);
+  lbImg.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+
+  /* ── Figure hover popover ───────────────────────────────────── */
+  var popover    = document.getElementById('fig-popover');
+  var popoverImg = document.getElementById('fig-popover-img');
+  var hideTimer  = null;
+
+  function positionPopover(wrap) {
+    var rect = wrap.getBoundingClientRect();
+    var pW   = popover.offsetWidth;
+    var pH   = popover.offsetHeight;
+    var vw   = window.innerWidth;
+    var vh   = window.innerHeight;
+    var GAP  = 14;
+    var left, top;
+
+    if (rect.right + GAP + pW <= vw) {
+      left = rect.right + GAP;                          // prefer right
+    } else if (rect.left - GAP - pW >= 0) {
+      left = rect.left - GAP - pW;                     // fall back left
+    } else {
+      left = Math.max(8, (vw - pW) / 2);               // centre
+    }
+
+    top = rect.top + rect.height / 2 - pH / 2;
+    top = Math.max(8, Math.min(top, vh - pH - 8));
+
+    popover.style.left = left + 'px';
+    popover.style.top  = top  + 'px';
+  }
+
+  function showPopover(img) {
+    if (hideTimer) { clearTimeout(hideTimer); hideTimer = null; }
+    popoverImg.src = img.src;
+    popoverImg.alt = img.alt || '';
+    popover.style.visibility = 'hidden';
+    popover.classList.add('visible');
+    requestAnimationFrame(function() {
+      var wrap = img.closest('.gallery-wrap') || img.parentElement;
+      positionPopover(wrap);
+      popover.style.visibility = '';
+    });
+  }
+
+  function hidePopover() {
+    hideTimer = setTimeout(function() {
+      popover.classList.remove('visible');
+    }, 80);
+  }
+
+  document.querySelectorAll('.gallery-img').forEach(function(img) {
+    img.addEventListener('mouseenter', function() {
+      if (img.classList.contains('active')) showPopover(img);
+    });
+    img.addEventListener('mouseleave', hidePopover);
+  });
+</script>
 
 </body>
 </html>
