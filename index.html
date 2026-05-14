@@ -25,6 +25,7 @@
 
 <!-- ── Hero ────────────────────────────────────────────────── -->
 <section id="hero">
+  <img class="hero-avatar" src="images/JoshuaAlexanderOsborne.png" alt="Joshua Osborne" />
   <p class="tagline">Physics PhD · Data Science &amp; Research</p>
   <h1>Joshua Alexander Osborne</h1>
   <p class="subtitle">
@@ -63,13 +64,16 @@
       </svg>
       LinkedIn
     </a>
-    <a class="btn btn-outline" href="mailto:joshuaalexanderosborne@gmail.com">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="2" y="4" width="20" height="16" rx="2"/>
-        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    <a class="btn btn-outline"
+       href="https://orcid.org/0000-0003-1321-748X"
+       target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm-1.844
+                 5.184h1.3v1.3h-1.3v-1.3zm0 2.899h1.3V18.1h-1.3V8.083zm3.03 0h3.498c3.33
+                 0 4.67 2.387 4.67 5.01 0 2.56-1.29 5.007-4.67 5.007h-3.498V8.083zm1.3
+                 1.18v7.658h2.04c2.56 0 3.468-1.79 3.468-3.829 0-1.972-.85-3.829-3.468-3.829H14.486z"/>
       </svg>
-      Email
+      Publications
     </a>
   </div>
 </section>
@@ -280,6 +284,30 @@
                  target="_blank" rel="noopener">DOI</a>
               <a class="pub-link" href="https://arxiv.org/abs/2310.19941"
                  target="_blank" rel="noopener">arXiv</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOT/BTS 2021 — Traffic Flow AI -->
+      <div class="pub-card">
+        <div class="pub-content">
+          <span class="pub-year">2021</span>
+          <div class="pub-body">
+            <p class="pub-title">
+              Enhancing Traffic Flow and Driving Safety via Artificial Intelligence
+            </p>
+            <p class="pub-authors">
+              Amir Shahmoradi, <strong>Joshua Osborne</strong>,
+              Parvat Sapkota, Christopher Bryant
+            </p>
+            <p class="pub-venue">
+              U.S. Department of Transportation, National Transportation Library
+            </p>
+            <div class="pub-links">
+              <a class="pub-link"
+                 href="https://rosap.ntl.bts.gov/view/dot/58524"
+                 target="_blank" rel="noopener">DOT/NTL</a>
             </div>
           </div>
         </div>
@@ -525,6 +553,13 @@
        target="_blank" rel="noopener">
       github.com/JoshuaOsborneDATA
     </a>
+    &middot;
+    <span class="footer-email" onclick="navigator.clipboard.writeText('joshuaalexanderosborne@gmail.com').then(function(){
+      var el=document.querySelector('.footer-email');
+      var prev=el.textContent;
+      el.textContent='Copied!';
+      setTimeout(function(){ el.textContent=prev; }, 2000);
+    })" title="Click to copy email">joshuaalexanderosborne@gmail.com</span>
   </p>
 </footer>
 

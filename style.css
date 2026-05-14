@@ -67,6 +67,16 @@ nav ul a:hover { color: var(--white); text-decoration: none; }
   text-align: center;
 }
 
+.hero-avatar {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,.25);
+  margin: 0 auto 1.25rem;
+}
+
 #hero .tagline {
   display: inline-block;
   background: rgba(37,99,235,.35);
@@ -522,3 +532,5 @@ footer {
 }
 footer a { color: rgba(255,255,255,.65); }
 footer a:hover { color: var(--white); }
+.footer-email { color: rgba(255,255,255,.65); cursor: pointer; }
+.footer-email:hover { color: var(--white); }
