@@ -378,6 +378,7 @@ h2.section-title {
   z-index: 0;
 }
 .gallery-img.active { display: block; }
+video.gallery-img { cursor: default; }
 
 .gallery-placeholder {
   display: flex;

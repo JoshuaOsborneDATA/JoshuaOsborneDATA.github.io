@@ -237,10 +237,10 @@
       <!-- Statistics Notes -->
       <div class="project-card">
         <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/projects/statistics_notes/thompson_sampling_bayes.gif" alt="Thompson Sampling: Beta posteriors converging on each arm's true reward rate over 200 rounds" />
-          <img class="gallery-img" src="images/projects/statistics_notes/thompson_sampling.gif" alt="Thompson Sampling: arm pull distribution evolving as the algorithm exploits the best arm" />
-          <img class="gallery-img" src="images/projects/statistics_notes/epsilon_greedy_convergence.gif" alt="Epsilon-greedy: reward estimates converging toward true values over many rounds" />
-          <img class="gallery-img" src="images/projects/statistics_notes/ucb1_convergence.gif" alt="UCB1: confidence bounds shrinking as pulls accumulate" />
+          <video class="gallery-img active" autoplay loop muted playsinline><source src="images/projects/statistics_notes/thompson_sampling_bayes.webm" type="video/webm"></video>
+          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/thompson_sampling.webm" type="video/webm"></video>
+          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/epsilon_greedy_convergence.webm" type="video/webm"></video>
+          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/ucb1_convergence.webm" type="video/webm"></video>
           <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
           <button class="gallery-next" aria-label="Next figure">&#8250;</button>
           <div class="gallery-dots">
@@ -777,9 +777,13 @@
     }
 
     function show(i) {
-      imgs.forEach(function(img) { img.classList.remove('active'); });
-      dots.forEach(function(d)   { d.classList.remove('active'); });
+      imgs.forEach(function(el) {
+        el.classList.remove('active');
+        if (el.tagName === 'VIDEO') el.pause();
+      });
+      dots.forEach(function(d) { d.classList.remove('active'); });
       imgs[i].classList.add('active');
+      if (imgs[i].tagName === 'VIDEO') imgs[i].play();
       if (dots[i]) dots[i].classList.add('active');
     }
 
@@ -811,6 +815,7 @@
   function closeLightbox() { lb.classList.remove('open'); }
 
   document.querySelectorAll('.gallery-img').forEach(function(img) {
+    if (img.tagName === 'VIDEO') return;
     img.addEventListener('click', function() { openLightbox(img.src, img.alt); });
   });
 
@@ -870,6 +875,7 @@
   }
 
   document.querySelectorAll('.gallery-img').forEach(function(img) {
+    if (img.tagName === 'VIDEO') return;
     img.addEventListener('mouseenter', function() {
       if (img.classList.contains('active')) showPopover(img);
     });
