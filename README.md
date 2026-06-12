@@ -5,14 +5,13 @@ My portfolio can be found at https://joshuaosbornedata.github.io/
 
 
 <ins>Notes</ins>  
-**What's in there?** So far, not much, but I intend to build upon it little by little every day. The idea is to have a resource where you can  
-find anything you need related to statistcs (descriptive statistics, A/B testing, probability theory, machine learning, etc.).  
+**What's in there?** So far, not much, but I intend to build upon it little by little every day. The idea is to have a resource where you can find anything you need related to statistcs (descriptive statistics, A/B testing, probability theory, machine learning, etc.).  
 
 **Why?** For one, it acts as personal notes for myself. Two, sometimes I want to know where an equation came from and I want to know what it's  
 related to. So my goal is to have a set of notes that does just that (we'll see how it goes and if I stay true to that idea!). I'm hoping that  
 it helps others along the way as well!  
 
-**Where the notes are located:** At https://github.com/JoshuaOsborneDATA/Notes_html
+**Where the notes are located:** At https://github.com/JoshuaOsborneDATA/Notes_html . To view the html go to: https://joshuaosbornedata.github.io/notes/index.html
   
 **Contributions:** If you want to add on to the notes, see something wrong, or see something missing then feel free to contribute or correct me!  
 If you also want to take the notes and make it into your own, feel free. Currently I use obsidian and use wikilinks so the build script will  
