@@ -12,7 +12,7 @@ find anything you need related to statistcs (descriptive statistics, A/B testing
 related to. So my goal is to have a set of notes that does just that (we'll see how it goes and if I stay true to that idea!). I'm hoping that  
 it helps others along the way as well!  
 
-**Where the notes are located:** At https://github.com/JoshuaOsborneDATA/Notes_html
+**Where the notes are located:** At https://github.com/JoshuaOsborneDATA/Notes_html . To view the html go to: https://joshuaosbornedata.github.io/notes/index.html
   
 **Contributions:** If you want to add on to the notes, see something wrong, or see something missing then feel free to contribute or correct me!  
 If you also want to take the notes and make it into your own, feel free. Currently I use obsidian and use wikilinks so the build script will  
