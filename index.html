@@ -44,10 +44,10 @@
     </button>
   </div>
   <ul>
-    <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#publications">Publications</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#awards">Awards</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -95,6 +95,16 @@
       LinkedIn
     </a>
     <a class="btn btn-outline"
+       href="JoshuaOsborne_Resume.pdf"
+       download="JoshuaOsborne_Resume.pdf">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Resume
+    </a>
+    <a class="btn btn-outline"
        href="https://orcid.org/0000-0003-1321-748X"
        target="_blank" rel="noopener">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -105,82 +115,6 @@
       </svg>
       ORCID
     </a>
-  </div>
-</section>
-
-<!-- ── About ────────────────────────────────────────────────── -->
-<section id="about">
-  <div class="container">
-    <p class="section-label">Background</p>
-    <h2 class="section-title">About Me</h2>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>Education</h3>
-        <ul>
-          <li><strong>Ph.D. in Physics:</strong> University of Texas at Arlington (2020–2025)</li>
-          <li><strong>B.Sc. in Physics,</strong> minor in Mathematics; University of Texas at Arlington (2016–2019)</li>
-        </ul>
-      </div>
-      <div class="about-card">
-        <h3>Research</h3>
-        <p>
-          Published researcher at UT Arlington's
-          <a href="https://www.cdslab.org" target="_blank" rel="noopener">CDSLab</a>.
-          Work spans gamma-ray burst statistics, Bayesian hierarchical modeling,
-          Monte Carlo methods, and correcting selection biases in large
-          observational datasets. Six peer-reviewed publications across
-          <em>A&amp;A</em>, <em>ApJ</em>, <em>MNRAS</em>, and <em>Universe</em>.
-        </p>
-      </div>
-      <div class="about-card">
-        <h3>Industry</h3>
-        <p>
-          AI / Data Scientist at RipDrip; built production AWS ETL pipelines
-          and LLM-based classifiers for downstream marketing analytics. Delivered
-          Power BI dashboards tracking campaign performance, ad-spend efficiency,
-          and sales pipeline visibility.
-        </p>
-      </div>
-      <div class="about-card">
-        <h3>Technical Skills</h3>
-        <div class="skills-group">
-          <p class="skill-category">Languages</p>
-          <div class="tags">
-            <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Julia</span><span class="tag">MATLAB</span><span class="tag">Fortran</span><span class="tag">C++</span>
-          </div>
-        </div>
-        <div class="skills-group">
-          <p class="skill-category">ML / Stats</p>
-          <div class="tags">
-            <span class="tag">PyTorch</span><span class="tag">Scikit-learn</span><span class="tag">SciPy</span><span class="tag">ParaMonte</span>
-          </div>
-        </div>
-        <div class="skills-group">
-          <p class="skill-category">Data</p>
-          <div class="tags">
-            <span class="tag">PySpark</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
-          </div>
-        </div>
-        <div class="skills-group">
-          <p class="skill-category">Cloud (AWS)</p>
-          <div class="tags">
-            <span class="tag">S3</span><span class="tag">Glue</span><span class="tag">Athena</span><span class="tag">Lambda</span><span class="tag">EventBridge</span>
-          </div>
-        </div>
-        <div class="skills-group">
-          <p class="skill-category">Viz</p>
-          <div class="tags">
-            <span class="tag">Plotly</span><span class="tag">Streamlit</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Matplotlib</span>
-          </div>
-        </div>
-        <div class="skills-group">
-          <p class="skill-category">Tools</p>
-          <div class="tags">
-            <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">MPICH</span><span class="tag">OpenMP</span>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -195,15 +129,15 @@
         <div class="exp-header">
           <div class="exp-meta">
             <p class="exp-company">RipDrip</p>
-            <p class="exp-role">AI / Data Scientist</p>
+            <p class="exp-role">Data Scientist</p>
           </div>
           <span class="exp-date">Dec 2025 – Apr 2026 · Arlington, TX</span>
         </div>
         <ul class="exp-bullets">
-          <li>Architected and deployed an end-to-end ETL pipeline on AWS using PySpark and Glue, with S3 as the storage backbone following the medallion architecture to organize raw, cleansed, and curated data layers</li>
-          <li>Discovered inefficiencies in company ad-spend, resulting in a 10× increase in return on ad-spend</li>
-          <li>Built a Marketing/Sales dashboard in Power BI tracking show-rate, time-to-sale, and ad-spend efficiency across campaigns</li>
-          <li>Extracted and structured customer intent signals from 1,000+ daily messages using regex and LLM-based classification, enabling downstream sales prioritization</li>
+          <li>Delivered a 10x increase in ad-spend ROAS by identifying campaign inefficiencies via SQL attribution analysis in AWS Athena; findings presented directly to leadership.</li>
+          <li>Defined and delivered key sales KPIs (show-rate, time-to-sale, campaign efficiency) in a Power BI dashboard with daily automated refresh, replacing a fully manual process; adopted by sales and marketing as the primary reporting layer for weekly performance reviews.</li>
+          <li>Eliminated manual review of 1,000+ daily messages by building a Python pipeline combining regex and LLM inference (Gemma 4, few-shot + chain-of-thought) to extract and structure customer intent signals for automated sales prioritization.</li>
+          <li>Architected an end-to-end ETL pipeline on AWS (PySpark via Docker for local testing, Glue, S3, Athena) ingesting from 6 APIs; medallion architecture with schema enforcement in silver, star schema in gold; configured SNS alerting for pipeline failure detection and data health monitoring; enforced least-privilege access via IAM policies and KMS encryption across S3 and Glue resources.</li>
         </ul>
       </div>
 
@@ -211,15 +145,16 @@
         <div class="exp-header">
           <div class="exp-meta">
             <p class="exp-company">University of Texas at Arlington</p>
-            <p class="exp-role">Graduate Research / Teaching Assistant</p>
+            <p class="exp-role">Graduate Research Assistant</p>
           </div>
           <span class="exp-date">Jan 2020 – Dec 2025 · Arlington, TX</span>
         </div>
         <ul class="exp-bullets">
-          <li>Published 6 peer-reviewed papers in high-energy astrophysics, leveraging Bayesian inference, Monte Carlo methods, and advanced statistical techniques</li>
-          <li>Presented research at multiple American Physical Society (APS) conferences on GRB population statistics and Bayesian inference methods</li>
-          <li>Mentored 3 undergraduate researchers in scientific computing and data analysis, supporting their integration into active research projects</li>
-          <li>Instructed undergraduate physics labs for 60 students per semester, delivering hands-on instruction in experimental methods</li>
+          <li>Published 6 peer-reviewed papers applying Bayesian inference, MLE, Monte Carlo simulation, bootstrap methods, and hypothesis testing in Python to large astrophysical datasets.</li>
+          <li>Resolved contested empirical claims across multiple peer-reviewed publications by applying significance testing and root cause analysis to identify how model misspecification propagated into false conclusions.</li>
+          <li>Built and evaluated deep learning models using PyTorch across 6 GPUs; operated MPI-parallelized scientific computing pipelines on TACC supercomputers (96 cores).</li>
+          <li>Presented research findings to both technical and non-technical audiences at multiple American Physical Society (APS) conferences.</li>
+          <li>Mentored 3 undergraduate researchers in scientific computing, statistical analysis, and Python.</li>
         </ul>
       </div>
 
@@ -632,6 +567,82 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ── About ────────────────────────────────────────────────── -->
+<section id="about">
+  <div class="container">
+    <p class="section-label">Background</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>Ph.D. in Physics:</strong> University of Texas at Arlington (2020–2025)</li>
+          <li><strong>B.Sc. in Physics,</strong> minor in Mathematics; University of Texas at Arlington (2016–2019)</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>Research</h3>
+        <p>
+          Published researcher at UT Arlington's
+          <a href="https://www.cdslab.org" target="_blank" rel="noopener">CDSLab</a>.
+          Work spans gamma-ray burst statistics, Bayesian hierarchical modeling,
+          Monte Carlo methods, and correcting selection biases in large
+          observational datasets. Six peer-reviewed publications across
+          <em>A&amp;A</em>, <em>ApJ</em>, <em>MNRAS</em>, and <em>Universe</em>.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>Industry</h3>
+        <p>
+          Data Scientist at RipDrip; built production AWS ETL pipelines
+          and LLM-based classifiers for downstream marketing analytics. Delivered
+          Power BI dashboards tracking campaign performance, ad-spend efficiency,
+          and sales pipeline visibility.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>Technical Skills</h3>
+        <div class="skills-group">
+          <p class="skill-category">Languages</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Julia</span><span class="tag">MATLAB</span><span class="tag">Fortran</span><span class="tag">C++</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">ML / Stats</p>
+          <div class="tags">
+            <span class="tag">PyTorch</span><span class="tag">XGBoost</span><span class="tag">LightGBM</span><span class="tag">Scikit-learn</span><span class="tag">SciPy</span><span class="tag">Optuna</span><span class="tag">ParaMonte</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">Data</p>
+          <div class="tags">
+            <span class="tag">PySpark</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">Cloud (AWS)</p>
+          <div class="tags">
+            <span class="tag">S3</span><span class="tag">Glue</span><span class="tag">Athena</span><span class="tag">Lambda</span><span class="tag">EventBridge</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">Viz</p>
+          <div class="tags">
+            <span class="tag">Plotly</span><span class="tag">Streamlit</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Matplotlib</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <p class="skill-category">Tools</p>
+          <div class="tags">
+            <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">MPICH</span><span class="tag">OpenMP</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
