@@ -274,30 +274,27 @@
         <div class="project-footer">
           <a class="btn btn-primary" href="notes/index.html">View Notes</a>
           <a class="btn btn-outline" href="notes/graph/index.html">Knowledge Graph</a>
+          <a class="btn btn-outline" href="https://github.com/JoshuaOsborneDATA/Notes_html" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
       <!-- Urban Safety Atlas -->
       <div class="project-card">
         <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/projects/urban_safety_atlas/01_cluster_comparison.png" alt="K-Means vs HDBSCAN clustering on PCA coordinates" />
-          <img class="gallery-img" src="images/projects/urban_safety_atlas/02_pca_umap.png" alt="PCA and UMAP dimensionality reduction coloured by safety index" />
-          <img class="gallery-img" src="images/projects/urban_safety_atlas/03_convergent_validity.png" alt="Convergent validity: safety index vs external benchmarks" />
-          <img class="gallery-img" src="images/projects/urban_safety_atlas/04_bootstrap_ranks.png" alt="Bootstrap confidence intervals on county safety ranks" />
-          <img class="gallery-img" src="images/projects/urban_safety_atlas/05_weight_sensitivity.png" alt="Weight sensitivity analysis across sub-score combinations" />
+          <img class="gallery-img active" src="images/projects/urban_safety_atlas/01_tsne_safety_score.png" alt="t-SNE embedding of 3,100+ US counties coloured by composite safety score" />
+          <img class="gallery-img" src="images/projects/urban_safety_atlas/02_cluster_comparison.png" alt="K-Means vs HDBSCAN clustering on t-SNE coordinates" />
+          <img class="gallery-img" src="images/projects/urban_safety_atlas/03_elbow_silhouette.png" alt="Elbow and silhouette score curves used to select optimal k" />
           <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
           <button class="gallery-next" aria-label="Next figure">&#8250;</button>
           <div class="gallery-dots">
             <button class="gallery-dot active"></button>
             <button class="gallery-dot"></button>
             <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
           </div>
         </div>
         <div class="project-header">
           <p class="project-title">Urban Safety Atlas</p>
-          <span class="badge badge-wip">In Progress</span>
+          <span class="badge badge-oss">Complete</span>
         </div>
         <p class="project-desc">
           County-level risk profiling across 3,100+ US counties. Merges four
@@ -314,6 +311,10 @@
           <span class="tag">Streamlit</span>
           <span class="tag">Plotly</span>
           <span class="tag">SciPy</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://urban-safety-atlas-f8k8ywatsvyunwpntkz9pp.streamlit.app" target="_blank" rel="noopener">Live Dashboard</a>
+          <a class="btn btn-outline" href="https://github.com/JoshuaOsborneDATA/urban-safety-atlas" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
