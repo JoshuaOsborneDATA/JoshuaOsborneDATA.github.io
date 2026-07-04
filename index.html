@@ -44,9 +44,8 @@
     </button>
   </div>
   <ul>
-    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#publications">Publications</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#awards">Awards</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -118,6 +117,482 @@
   </div>
 </section>
 
+<!-- ── Projects & Publications ───────────────────────────────── -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label">Applied Work &amp; Research</p>
+    <h2 class="section-title">Projects &amp; Publications</h2>
+
+    <!-- Filter bar -->
+    <div class="filter-bar" role="group" aria-label="Filter projects">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="published">Published</button>
+      <button class="filter-btn" data-filter="research">Research</button>
+      <button class="filter-btn" data-filter="oss">Completed Project</button>
+      <button class="filter-btn" data-filter="wip-project">In Progress · Project</button>
+      <button class="filter-btn" data-filter="wip-research">In Progress · Research</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Urban Safety Atlas -->
+      <div class="project-card" data-badges="oss">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/projects/urban_safety_atlas/01_tsne_safety_score.png" alt="t-SNE embedding of 3,100+ US counties coloured by composite safety score" />
+          <img class="gallery-img" src="images/projects/urban_safety_atlas/02_cluster_comparison.png" alt="K-Means vs HDBSCAN clustering on t-SNE coordinates" />
+          <img class="gallery-img" src="images/projects/urban_safety_atlas/03_elbow_silhouette.png" alt="Elbow and silhouette score curves used to select optimal k" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">Urban Safety Atlas</p>
+          <span class="badge badge-oss">Completed Project</span>
+        </div>
+        <p class="project-desc">
+          County-level risk profiling across 3,100+ US counties. Merges four
+          federal datasets (EPA, CDC PLACES, NHTSA FARS, Census SAIPE) into a
+          composite safety index. Applies K-Means and HDBSCAN clustering to
+          surface distinct safety tiers, with a Streamlit choropleth dashboard
+          featuring weight presets and county drill-down.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">HDBSCAN</span>
+          <span class="tag">PCA / UMAP</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Plotly</span>
+          <span class="tag">SciPy</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://urban-safety-atlas-f8k8ywatsvyunwpntkz9pp.streamlit.app" target="_blank" rel="noopener">Live Dashboard</a>
+          <a class="btn btn-outline" href="https://github.com/JoshuaOsborneDATA/urban-safety-atlas" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <!-- GNN — Neutrinoless Double Beta Decay -->
+      <div class="project-card" data-badges="research">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/projects/gnn/epoch43.png" alt="Training and validation metrics at epoch 43" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">GNN Detection of Neutrinoless Double Beta Decay</p>
+          <span class="badge badge-research">Research</span>
+        </div>
+        <p class="project-desc">
+          Graph Neural Network classifier trained on 500K 3D point cloud events
+          (100+ GB) to separate signal from background in neutrinoless double beta
+          decay searches. Engineered radius-graph and k-NN graph topologies via
+          torch-cluster, trained across 6 GPUs with early stopping, and achieved
+          0.97 AUC on a balanced dataset. Classification threshold optimised using
+          Youden's J statistic.
+        </p>
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">PyTorch Geometric</span>
+          <span class="tag">GNN</span>
+          <span class="tag">torch-cluster</span>
+          <span class="tag">Point Cloud</span>
+          <span class="tag">Multi-GPU</span>
+        </div>
+        <div class="project-footer">
+          <span class="badge badge-private">Private Repository</span>
+        </div>
+      </div>
+
+      <!-- Publication: A&A 2024 — GRB Plateaus -->
+      <div class="project-card" data-badges="published research">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/grb_plateaus/lognormalDnDt.png"
+               alt="Log-normal dN/dT distribution fit to observed GRB plateau durations" />
+          <img class="gallery-img" src="images/publications/grb_plateaus/SyntheticVsObserved.png"
+               alt="Synthetic vs observed GRB duration distributions" />
+          <img class="gallery-img" src="images/publications/grb_plateaus/MCMCPlateauLength.png"
+               alt="MCMC posterior for plateau length parameters" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">An alternative statistical interpretation for the apparent plateaus in the duration distributions of GRBs</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-published">Published</span>
+            <span class="badge badge-research">Research</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          2024 · Astronomy &amp; Astrophysics (A&amp;A), 687 A122<br>
+          <strong>Osborne</strong>, Bryant, Bagheri, Shahmoradi
+        </p>
+        <div class="tags">
+          <span class="tag">Bayesian Statistics</span>
+          <span class="tag">MCMC</span>
+          <span class="tag">Population Statistics</span>
+          <span class="tag">Gamma-Ray Bursts</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://doi.org/10.1051/0004-6361/202348599" target="_blank" rel="noopener">DOI</a>
+          <a class="btn btn-outline" href="https://arxiv.org/abs/2310.19941" target="_blank" rel="noopener">arXiv</a>
+        </div>
+      </div>
+
+      <!-- Publication: MNRAS 2021 — Radio-loud/quiet GRBs -->
+      <div class="project-card" data-badges="published research">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/radio_grbs/fig/radioCutoffs.png"
+               alt="Eiso vs peak radio luminosity with classification thresholds" />
+          <img class="gallery-img" src="images/publications/radio_grbs/fig/SwiftEisoDurz.png"
+               alt="Swift GRB isotropic energy vs duration" />
+          <img class="gallery-img" src="images/publications/radio_grbs/fig/SynSample/correlations.png"
+               alt="Posterior correlations from synthetic universe MCMC sampling" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">Are there radio-loud and radio-quiet Gamma-Ray Bursts?</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-published">Published</span>
+            <span class="badge badge-research">Research</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          2021 · Monthly Notices of the Royal Astronomical Society (MNRAS), 502:5622–5630<br>
+          <strong>Osborne</strong>, Bagheri, Shahmoradi
+        </p>
+        <div class="tags">
+          <span class="tag">Bayesian Inference</span>
+          <span class="tag">Monte Carlo</span>
+          <span class="tag">Population Studies</span>
+          <span class="tag">Gamma-Ray Bursts</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://academic.oup.com/mnras/article/502/4/5622/6147226" target="_blank" rel="noopener">MNRAS</a>
+        </div>
+      </div>
+
+      <!-- Publication: ApJ 2020 — 1366 BATSE Redshifts -->
+      <div class="project-card" data-badges="published research">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/batse_redshifts/parapost/BatseDetEff.png"
+               alt="BATSE detection efficiency posterior" />
+          <img class="gallery-img" src="images/publications/batse_redshifts/methods/ToyProblem.png"
+               alt="Toy problem illustrating the multilevel Bayesian methodology" />
+          <img class="gallery-img" src="images/publications/batse_redshifts/methods/lc3d.png"
+               alt="3D light curve visualisation of BATSE GRB sample" />
+          <img class="gallery-img" src="images/publications/batse_redshifts/parapost/corEpkzEiso.png"
+               alt="Posterior correlation: peak photon energy vs isotropic energy" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">A Multilevel Empirical Bayesian Approach to Estimating the Unknown Redshifts of 1366 BATSE Catalog Long-Duration Gamma-Ray Bursts</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-published">Published</span>
+            <span class="badge badge-research">Research</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          2020 · The Astrophysical Journal (ApJ), 903:33–133<br>
+          <strong>Osborne</strong>, Shahmoradi, Nemiroff
+        </p>
+        <div class="tags">
+          <span class="tag">Empirical Bayes</span>
+          <span class="tag">MCMC</span>
+          <span class="tag">Population Statistics</span>
+          <span class="tag">Gamma-Ray Bursts</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://doi.org/10.3847/1538-4357/abb9b7" target="_blank" rel="noopener">DOI</a>
+          <a class="btn btn-outline" href="https://arxiv.org/abs/2006.01157" target="_blank" rel="noopener">arXiv</a>
+        </div>
+      </div>
+
+      <!-- Publication: Universe 2022 — BATSE Short GRBs (Invited) -->
+      <div class="project-card" data-badges="published research featured">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/batse_short_grbs/MCMC.png"
+               alt="MCMC posterior distributions for BATSE short GRB parameters" />
+          <img class="gallery-img" src="images/publications/batse_short_grbs/peak_flux_vs_t90.png"
+               alt="Peak flux vs T90 duration for BATSE short gamma-ray bursts" />
+          <img class="gallery-img" src="images/publications/batse_short_grbs/redshift_pdf.png"
+               alt="Inferred redshift probability density function for the BATSE sample" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">Bayesian Methods for Inferring Missing Data in the BATSE Catalog of Short Gamma-Ray Bursts</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-published">Published</span>
+            <span class="badge badge-research">Research</span>
+            <span class="badge badge-featured">Invited</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          2022 · Universe, 8(5), 267<br>
+          Shahmoradi, <strong>Osborne</strong>, Bagheri
+        </p>
+        <div class="tags">
+          <span class="tag">Bayesian Inference</span>
+          <span class="tag">Missing Data</span>
+          <span class="tag">Gamma-Ray Bursts</span>
+          <span class="tag">BATSE Catalog</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://doi.org/10.3390/universe8050267" target="_blank" rel="noopener">DOI</a>
+        </div>
+      </div>
+
+      <!-- Publication: MNRAS 2021 — Efron-Petrosian -->
+      <div class="project-card" data-badges="published research">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/efron_petrosian/fig/synSamFluenceZoneEisoCorrected.png"
+               alt="Bias-corrected Eiso zone distribution from synthetic sample (fluence)" />
+          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluenceThreshTau.png"
+               alt="Fluence-threshold synthetic sample: tau statistic" />
+          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluxThreshTau.png"
+               alt="Flux-threshold synthetic sample: tau statistic" />
+          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluxThreshAlpha.png"
+               alt="Flux-threshold synthetic sample: alpha parameter distribution" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">How unbiased statistical methods lead to biased scientific discoveries: the Efron-Petrosian statistic applied to GRB luminosity-redshift evolution</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-published">Published</span>
+            <span class="badge badge-research">Research</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          2021 · Monthly Notices of the Royal Astronomical Society (MNRAS), 504:4192–4203<br>
+          Bryant, <strong>Osborne</strong>, Shahmoradi
+        </p>
+        <div class="tags">
+          <span class="tag">Statistical Methods</span>
+          <span class="tag">Selection Bias</span>
+          <span class="tag">MLE</span>
+          <span class="tag">Gamma-Ray Bursts</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://academic.oup.com/mnras/article/504/3/4192/6226913" target="_blank" rel="noopener">MNRAS</a>
+        </div>
+      </div>
+
+      <!-- Publication: DOT/BTS 2021 — Traffic Flow AI -->
+      <div class="project-card" data-badges="published research">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/traffic_project/traffic.png"
+               alt="Traffic flow AI methodology diagram" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">Enhancing Traffic Flow and Driving Safety via Artificial Intelligence</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-published">Published</span>
+            <span class="badge badge-research">Research</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          2021 · U.S. Department of Transportation, National Transportation Library<br>
+          Shahmoradi, <strong>Osborne</strong>, Sapkota, Bryant
+        </p>
+        <div class="tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Traffic Safety</span>
+          <span class="tag">Artificial Intelligence</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://rosap.ntl.bts.gov/view/dot/58524" target="_blank" rel="noopener">DOT/NTL</a>
+        </div>
+      </div>
+
+      <!-- Publication: JOSS 2020 — ParaMonte -->
+      <div class="project-card" data-badges="published research">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/publications/paramonte_joss/fig1.png"
+               alt="ParaMonte grid plot of 4-dimensional MCMC sampling results" />
+        </div>
+        <div class="project-header">
+          <p class="project-title">Fast fully-reproducible serial/parallel Monte Carlo and MCMC simulations via ParaMonte::Python</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-published">Published</span>
+            <span class="badge badge-research">Research</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          2020 · Journal of Open Source Software (submitted)<br>
+          Shahmoradi, Bagheri, <strong>Osborne</strong>
+        </p>
+        <div class="tags">
+          <span class="tag">Monte Carlo</span>
+          <span class="tag">MCMC</span>
+          <span class="tag">Python</span>
+          <span class="tag">Open Source</span>
+          <span class="tag">ParaMonte</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="https://arxiv.org/abs/2010.00724" target="_blank" rel="noopener">arXiv</a>
+        </div>
+      </div>
+
+      <!-- Statistics Notes — In Progress -->
+      <div class="project-card" data-badges="wip-project">
+        <div class="gallery-wrap" data-gallery>
+          <video class="gallery-img active" autoplay loop muted playsinline><source src="images/projects/statistics_notes/thompson_sampling_bayes.webm" type="video/webm"></video>
+          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/thompson_sampling.webm" type="video/webm"></video>
+          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/epsilon_greedy_convergence.webm" type="video/webm"></video>
+          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/ucb1_convergence.webm" type="video/webm"></video>
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+            <button class="gallery-dot"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">Statistics Notes</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-wip-project">In Progress · Project</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          A growing collection of self-contained statistics and machine learning
+          notes spanning probability theory, Bayesian inference, A/B testing,
+          machine learning, and more. Each note covers intuition, formal
+          definitions, step-by-step derivations, and worked examples, with
+          simulation figures built from scratch in Python.
+        </p>
+        <div class="tags">
+          <span class="tag">Bayesian Statistics</span>
+          <span class="tag">A/B Testing</span>
+          <span class="tag">Multi-Armed Bandits</span>
+          <span class="tag">Probability Theory</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">MathJax</span>
+        </div>
+        <div class="project-footer">
+          <a class="btn btn-primary" href="notes/index.html">View Notes</a>
+          <a class="btn btn-outline" href="notes/graph/index.html">Knowledge Graph</a>
+          <a class="btn btn-outline" href="https://github.com/JoshuaOsborneDATA/Notes_html" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Amazon Video Game Recommendation System — In Progress -->
+      <div class="project-card" data-badges="wip-project">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/projects/amazon_rec_sysytem/monthly_volume.png"
+               alt="Monthly Amazon Video Game review volume from 1999 to 2023" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">Amazon Video Game Recommendation System</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-wip-project">In Progress · Project</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Analysis of Amazon 2023 Video Games data for the purpose of recommending relevant products.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">LambdaMART</span>
+          <span class="tag">Learning to Rank</span>
+          <span class="tag">SVD</span>
+          <span class="tag">Recommendation Systems</span>
+          <span class="tag">Pandas</span>
+        </div>
+        <div class="project-footer">
+          <span class="badge badge-private">Private Repository</span>
+        </div>
+      </div>
+
+      <!-- GRB Signal Identification — In Progress -->
+      <div class="project-card" data-badges="research wip-research">
+        <div class="gallery-wrap" data-gallery>
+          <img class="gallery-img active" src="images/projects/GRB%20signal%20identification/image%20(1).png" alt="Noisy gamma-ray burst lightcurve with signal identification overlay" />
+          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
+          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
+          <div class="gallery-dots">
+            <button class="gallery-dot active"></button>
+          </div>
+        </div>
+        <div class="project-header">
+          <p class="project-title">GRB Signal Identification</p>
+          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
+            <span class="badge badge-research">Research</span>
+            <span class="badge badge-wip-research">In Progress · Research</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Bayesian framework for identifying astrophysical signal in noisy
+          gamma-ray burst lightcurves; determines optimal time-bin widths to
+          resolve genuine flux variations from background fluctuations. Analogous
+          in spirit to the Bayesian Blocks algorithm; developed independently for
+          targeted GRB pulse detection.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Bayesian Statistics</span>
+          <span class="tag">SciPy</span>
+          <span class="tag">ParaMonte</span>
+        </div>
+        <div class="project-footer">
+          <span class="badge badge-private">Private Repository</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ── Experience ───────────────────────────────────────────── -->
 <section id="experience">
   <div class="container">
@@ -156,415 +631,6 @@
           <li>Presented research findings to both technical and non-technical audiences at multiple American Physical Society (APS) conferences.</li>
           <li>Mentored 3 undergraduate researchers in scientific computing, statistical analysis, and Python.</li>
         </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── Projects ──────────────────────────────────────────────── -->
-<section id="projects">
-  <div class="container">
-    <p class="section-label">Applied Work</p>
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-
-      <!-- Statistics Notes -->
-      <div class="project-card">
-        <div class="gallery-wrap" data-gallery>
-          <video class="gallery-img active" autoplay loop muted playsinline><source src="images/projects/statistics_notes/thompson_sampling_bayes.webm" type="video/webm"></video>
-          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/thompson_sampling.webm" type="video/webm"></video>
-          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/epsilon_greedy_convergence.webm" type="video/webm"></video>
-          <video class="gallery-img" autoplay loop muted playsinline><source src="images/projects/statistics_notes/ucb1_convergence.webm" type="video/webm"></video>
-          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
-          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
-          <div class="gallery-dots">
-            <button class="gallery-dot active"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-          </div>
-        </div>
-        <div class="project-header">
-          <p class="project-title">Statistics Notes</p>
-          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
-            <span class="badge badge-wip">In Progress</span>
-          </div>
-        </div>
-        <p class="project-desc">
-          A growing collection of self-contained statistics and machine learning
-          notes spanning probability theory, Bayesian inference, A/B testing,
-          machine learning, and more. Each note covers intuition, formal
-          definitions, step-by-step derivations, and worked examples, with
-          simulation figures built from scratch in Python.
-        </p>
-        <div class="tags">
-          <span class="tag">Bayesian Statistics</span>
-          <span class="tag">A/B Testing</span>
-          <span class="tag">Multi-Armed Bandits</span>
-          <span class="tag">Probability Theory</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">MathJax</span>
-        </div>
-        <div class="project-footer">
-          <a class="btn btn-primary" href="notes/index.html">View Notes</a>
-          <a class="btn btn-outline" href="notes/graph/index.html">Knowledge Graph</a>
-          <a class="btn btn-outline" href="https://github.com/JoshuaOsborneDATA/Notes_html" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-
-      <!-- Urban Safety Atlas -->
-      <div class="project-card">
-        <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/projects/urban_safety_atlas/01_tsne_safety_score.png" alt="t-SNE embedding of 3,100+ US counties coloured by composite safety score" />
-          <img class="gallery-img" src="images/projects/urban_safety_atlas/02_cluster_comparison.png" alt="K-Means vs HDBSCAN clustering on t-SNE coordinates" />
-          <img class="gallery-img" src="images/projects/urban_safety_atlas/03_elbow_silhouette.png" alt="Elbow and silhouette score curves used to select optimal k" />
-          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
-          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
-          <div class="gallery-dots">
-            <button class="gallery-dot active"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-          </div>
-        </div>
-        <div class="project-header">
-          <p class="project-title">Urban Safety Atlas</p>
-          <span class="badge badge-oss">Complete</span>
-        </div>
-        <p class="project-desc">
-          County-level risk profiling across 3,100+ US counties. Merges four
-          federal datasets (EPA, CDC PLACES, NHTSA FARS, Census SAIPE) into a
-          composite safety index. Applies K-Means and HDBSCAN clustering to
-          surface distinct safety tiers, with a Streamlit choropleth dashboard
-          featuring weight presets and county drill-down.
-        </p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Scikit-learn</span>
-          <span class="tag">HDBSCAN</span>
-          <span class="tag">PCA / UMAP</span>
-          <span class="tag">Streamlit</span>
-          <span class="tag">Plotly</span>
-          <span class="tag">SciPy</span>
-        </div>
-        <div class="project-footer">
-          <a class="btn btn-primary" href="https://urban-safety-atlas-f8k8ywatsvyunwpntkz9pp.streamlit.app" target="_blank" rel="noopener">Live Dashboard</a>
-          <a class="btn btn-outline" href="https://github.com/JoshuaOsborneDATA/urban-safety-atlas" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-
-      <!-- GRB Signal Identification -->
-      <div class="project-card">
-        <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/projects/GRB%20signal%20identification/image%20(1).png" alt="Noisy gamma-ray burst lightcurve with signal identification overlay" />
-          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
-          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
-          <div class="gallery-dots">
-            <button class="gallery-dot active"></button>
-          </div>
-        </div>
-        <div class="project-header">
-          <p class="project-title">GRB Signal Identification</p>
-          <div style="display:flex;gap:.35rem;flex-wrap:wrap;">
-            <span class="badge badge-research">Research</span>
-            <span class="badge badge-wip">In Progress</span>
-          </div>
-        </div>
-        <p class="project-desc">
-          Bayesian framework for identifying astrophysical signal in noisy
-          gamma-ray burst lightcurves; determines optimal time-bin widths to
-          resolve genuine flux variations from background fluctuations. Analogous
-          in spirit to the Bayesian Blocks algorithm; developed independently for
-          targeted GRB pulse detection.
-        </p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Bayesian Statistics</span>
-          <span class="tag">SciPy</span>
-          <span class="tag">ParaMonte</span>
-        </div>
-        <div class="project-footer">
-          <span class="badge badge-private">Private Repository</span>
-        </div>
-      </div>
-
-      <!-- GNN — Neutrinoless Double Beta Decay -->
-      <div class="project-card">
-        <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/projects/gnn/epoch43.png" alt="Training and validation metrics at epoch 43" />
-          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
-          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
-          <div class="gallery-dots">
-            <button class="gallery-dot active"></button>
-          </div>
-        </div>
-        <div class="project-header">
-          <p class="project-title">GNN Detection of Neutrinoless Double Beta Decay</p>
-          <span class="badge badge-research">Research</span>
-        </div>
-        <p class="project-desc">
-          Graph Neural Network classifier trained on 500K 3D point cloud events
-          (100+ GB) to separate signal from background in neutrinoless double beta
-          decay searches. Engineered radius-graph and k-NN graph topologies via
-          torch-cluster, trained across 6 GPUs with early stopping, and achieved
-          0.97 AUC on a balanced dataset. Classification threshold optimised using
-          Youden's J statistic.
-        </p>
-        <div class="tags">
-          <span class="tag">PyTorch</span>
-          <span class="tag">PyTorch Geometric</span>
-          <span class="tag">GNN</span>
-          <span class="tag">torch-cluster</span>
-          <span class="tag">Point Cloud</span>
-          <span class="tag">Multi-GPU</span>
-        </div>
-        <div class="project-footer">
-          <span class="badge badge-private">Private Repository</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── Publications ──────────────────────────────────────────── -->
-<section id="publications">
-  <div class="container">
-    <p class="section-label">Peer-Reviewed Research</p>
-    <h2 class="section-title">Publications</h2>
-    <div class="pub-list">
-
-      <!-- A&A 2024 -->
-      <div class="pub-card">
-        <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/publications/grb_plateaus/lognormalDnDt.png"
-               alt="Log-normal dN/dT distribution fit to observed GRB plateau durations" />
-          <img class="gallery-img" src="images/publications/grb_plateaus/SyntheticVsObserved.png"
-               alt="Synthetic vs observed GRB duration distributions" />
-          <img class="gallery-img" src="images/publications/grb_plateaus/MCMCPlateauLength.png"
-               alt="MCMC posterior for plateau length parameters" />
-          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
-          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
-          <div class="gallery-dots">
-            <button class="gallery-dot active"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-          </div>
-        </div>
-        <div class="pub-content">
-          <span class="pub-year">2024</span>
-          <div class="pub-body">
-            <p class="pub-title">
-              An alternative statistical interpretation for the apparent plateaus
-              in the duration distributions of GRBs
-            </p>
-            <p class="pub-authors">
-              <strong>Joshua Alexander Osborne</strong>, Christopher Michael Bryant,
-              Fatemeh Bagheri, Amir Shahmoradi
-            </p>
-            <p class="pub-venue">Astronomy &amp; Astrophysics (A&amp;A), 687 A122</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://doi.org/10.1051/0004-6361/202348599"
-                 target="_blank" rel="noopener">DOI</a>
-              <a class="pub-link" href="https://arxiv.org/abs/2310.19941"
-                 target="_blank" rel="noopener">arXiv</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Universe 2022 -->
-      <div class="pub-card">
-        <div class="pub-content">
-          <span class="pub-year">2022</span>
-          <div class="pub-body">
-            <p class="pub-title">
-              Bayesian Methods for Inferring Missing Data in the BATSE Catalog
-              of Short Gamma-Ray Bursts (Invited)
-            </p>
-            <p class="pub-authors">
-              Amir Shahmoradi, <strong>Joshua Alexander Osborne</strong>,
-              Fatemeh Bagheri
-            </p>
-            <p class="pub-venue">Universe 2022, 8(5), 267</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://doi.org/10.3390/universe8050267"
-                 target="_blank" rel="noopener">DOI</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MNRAS 2021 — Efron-Petrosian -->
-      <div class="pub-card">
-        <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/publications/efron_petrosian/fig/synSamFluenceZoneEisoCorrected.png"
-               alt="Bias-corrected Eiso zone distribution from synthetic sample (fluence)" />
-          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluenceThreshTau.png"
-               alt="Fluence-threshold synthetic sample: tau statistic" />
-          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluxThreshTau.png"
-               alt="Flux-threshold synthetic sample: tau statistic" />
-          <img class="gallery-img" src="images/publications/efron_petrosian/fig/synSamFluxThreshAlpha.png"
-               alt="Flux-threshold synthetic sample: alpha parameter distribution" />
-          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
-          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
-          <div class="gallery-dots">
-            <button class="gallery-dot active"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-          </div>
-        </div>
-        <div class="pub-content">
-          <span class="pub-year">2021</span>
-          <div class="pub-body">
-            <p class="pub-title">
-              How unbiased statistical methods lead to biased scientific
-              discoveries: A case study of the Efron-Petrosian statistic applied
-              to the luminosity-redshift evolution of Gamma-Ray Bursts
-            </p>
-            <p class="pub-authors">
-              Christopher Michael Bryant,
-              <strong>Joshua Alexander Osborne</strong>, Amir Shahmoradi
-            </p>
-            <p class="pub-venue">
-              Monthly Notices of the Royal Astronomical Society (MNRAS) 504:4192–4203
-            </p>
-            <div class="pub-links">
-              <a class="pub-link"
-                 href="https://academic.oup.com/mnras/article/504/3/4192/6226913"
-                 target="_blank" rel="noopener">MNRAS</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MNRAS 2021 — Radio-loud/quiet GRBs -->
-      <div class="pub-card">
-        <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/publications/radio_grbs/fig/radioCutoffs.png"
-               alt="Eiso vs peak radio luminosity with classification thresholds" />
-          <img class="gallery-img" src="images/publications/radio_grbs/fig/SwiftEisoDurz.png"
-               alt="Swift GRB isotropic energy vs duration" />
-          <img class="gallery-img" src="images/publications/radio_grbs/fig/SynSample/correlations.png"
-               alt="Posterior correlations from synthetic universe MCMC sampling" />
-          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
-          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
-          <div class="gallery-dots">
-            <button class="gallery-dot active"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-          </div>
-        </div>
-        <div class="pub-content">
-          <span class="pub-year">2021</span>
-          <div class="pub-body">
-            <p class="pub-title">Are there radio-loud and radio-quiet Gamma-Ray Bursts?</p>
-            <p class="pub-authors">
-              <strong>Joshua Alexander Osborne</strong>, Fatemeh Bagheri,
-              Amir Shahmoradi
-            </p>
-            <p class="pub-venue">
-              Monthly Notices of the Royal Astronomical Society (MNRAS) 502:5622–5630
-            </p>
-            <div class="pub-links">
-              <a class="pub-link"
-                 href="https://academic.oup.com/mnras/article/502/4/5622/6147226"
-                 target="_blank" rel="noopener">MNRAS</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DOT/BTS 2021 — Traffic Flow AI -->
-      <div class="pub-card">
-        <div class="pub-content">
-          <span class="pub-year">2021</span>
-          <div class="pub-body">
-            <p class="pub-title">
-              Enhancing Traffic Flow and Driving Safety via Artificial Intelligence
-            </p>
-            <p class="pub-authors">
-              Amir Shahmoradi, <strong>Joshua Osborne</strong>,
-              Parvat Sapkota, Christopher Bryant
-            </p>
-            <p class="pub-venue">
-              U.S. Department of Transportation, National Transportation Library
-            </p>
-            <div class="pub-links">
-              <a class="pub-link"
-                 href="https://rosap.ntl.bts.gov/view/dot/58524"
-                 target="_blank" rel="noopener">DOT/NTL</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- JOSS 2020 — ParaMonte -->
-      <div class="pub-card">
-        <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/publications/paramonte_joss/fig1.png"
-               alt="ParaMonte grid plot of 4-dimensional MCMC sampling results" />
-        </div>
-        <div class="pub-content">
-          <span class="pub-year">2020</span>
-          <div class="pub-body">
-            <p class="pub-title">
-              Fast fully-reproducible streamlined serial/parallel Monte Carlo/MCMC
-              simulations and visualizations via ParaMonte::Python library
-            </p>
-            <p class="pub-authors">
-              Amir Shahmoradi, Fatemeh Bagheri,
-              <strong>Joshua Alexander Osborne</strong>
-            </p>
-            <p class="pub-venue">Journal of Open Source Software (submitted)</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://arxiv.org/abs/2010.00724"
-                 target="_blank" rel="noopener">arXiv</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ApJ 2020 — 1366 BATSE redshifts -->
-      <div class="pub-card">
-        <div class="gallery-wrap" data-gallery>
-          <img class="gallery-img active" src="images/publications/batse_redshifts/parapost/BatseDetEff.png"
-               alt="BATSE detection efficiency posterior" />
-          <img class="gallery-img" src="images/publications/batse_redshifts/methods/ToyProblem.png"
-               alt="Toy problem illustrating the multilevel Bayesian methodology" />
-          <img class="gallery-img" src="images/publications/batse_redshifts/methods/lc3d.png"
-               alt="3D light curve visualisation of BATSE GRB sample" />
-          <img class="gallery-img" src="images/publications/batse_redshifts/parapost/corEpkzEiso.png"
-               alt="Posterior correlation: peak photon energy vs isotropic energy" />
-          <button class="gallery-prev" aria-label="Previous figure">&#8249;</button>
-          <button class="gallery-next" aria-label="Next figure">&#8250;</button>
-          <div class="gallery-dots">
-            <button class="gallery-dot active"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-            <button class="gallery-dot"></button>
-          </div>
-        </div>
-        <div class="pub-content">
-          <span class="pub-year">2020</span>
-          <div class="pub-body">
-            <p class="pub-title">
-              A Multilevel Empirical Bayesian Approach to Estimating the Unknown
-              Redshifts of 1366 BATSE Catalog Long-Duration Gamma-Ray Bursts
-            </p>
-            <p class="pub-authors">
-              <strong>Joshua A. Osborne</strong>, Amir Shahmoradi, Robert J. Nemiroff
-            </p>
-            <p class="pub-venue">The Astrophysical Journal (ApJ) 903:33–133</p>
-            <div class="pub-links">
-              <a class="pub-link" href="https://doi.org/10.3847/1538-4357/abb9b7"
-                 target="_blank" rel="noopener">DOI</a>
-              <a class="pub-link" href="https://arxiv.org/abs/2006.01157"
-                 target="_blank" rel="noopener">arXiv</a>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -768,6 +834,26 @@
   }, { rootMargin: '-40% 0px -55% 0px' });
 
   sections.forEach(function(s) { sectionObserver.observe(s); });
+
+  /* ── Badge filter ───────────────────────────────────────────── */
+  var filterBtns = Array.from(document.querySelectorAll('.filter-btn'));
+  var cards = Array.from(document.querySelectorAll('.project-card'));
+
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var filter = btn.dataset.filter;
+      filterBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      cards.forEach(function(card) {
+        if (filter === 'all') {
+          card.style.display = '';
+        } else {
+          var badges = (card.dataset.badges || '').split(' ');
+          card.style.display = badges.includes(filter) ? '' : 'none';
+        }
+      });
+    });
+  });
 
   /* ── Gallery navigation ─────────────────────────────────────── */
   document.querySelectorAll('[data-gallery]').forEach(function(gallery) {
