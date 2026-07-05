@@ -155,17 +155,18 @@
           <span class="badge badge-oss">Completed Project</span>
         </div>
         <p class="project-desc">
-          County-level risk profiling across 3,100+ US counties. Merges four
-          federal datasets (EPA, CDC PLACES, NHTSA FARS, Census SAIPE) into a
-          composite safety index. Applies K-Means and HDBSCAN clustering to
+          County-level risk profiling across 3,144 US counties. Merges five
+          government datasets (EPA, CDC PLACES, NHTSA FARS, Census SAIPE, CHR 2023)
+          into a five-dimension composite safety index. Validated against life expectancy
+          (Spearman &rho; = 0.80). Applies K-Means and HDBSCAN clustering to
           surface distinct safety tiers, with a Streamlit choropleth dashboard
-          featuring weight presets and county drill-down.
+          featuring adjustable weight presets and county drill-down.
         </p>
         <div class="tags">
           <span class="tag">Python</span>
           <span class="tag">Scikit-learn</span>
           <span class="tag">HDBSCAN</span>
-          <span class="tag">PCA / UMAP</span>
+          <span class="tag">PCA / t-SNE</span>
           <span class="tag">Streamlit</span>
           <span class="tag">Plotly</span>
           <span class="tag">SciPy</span>
