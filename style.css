@@ -478,8 +478,10 @@ video.gallery-img { cursor: default; }
   cursor: zoom-out;
 }
 
-.lightbox-img {
+.lightbox-img,
+.lightbox-video {
   position: relative;
+  z-index: 1;
   max-width: 90vw;
   max-height: 88vh;
   object-fit: contain;
